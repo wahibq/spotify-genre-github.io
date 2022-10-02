@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+main{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, 180px);
+    grid-gap: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .8em;
+    margin: 10px;
+}
+.grid{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 8px;
+    color: white;
+    overflow-wrap:break-word;
+}
+.grid  > h1{
+    padding: 10px;
+}
+.img{
+    position: absolute;
+    width: 100px;
+    top: 100px;
+    right: -1em;
+    transform: rotate(32deg);
+}
